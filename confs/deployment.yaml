@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitlab
+  namespace: gitlab
+spec:
+  selector:
+    matchLabels:
+      app: gitlab
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: gitlab
+    spec:
+    #  imagePullSecrets:
+    #    - name: dockerhub-auth
+      containers:
+      - name: gitlab
+        image: /gitlab/gitlab-ee:nightly
+        ports:
+          - containerPort: 61743
