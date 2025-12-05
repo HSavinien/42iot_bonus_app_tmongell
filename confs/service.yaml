@@ -9,4 +9,4 @@ spec:
   ports:
     - port: 81
       protocol: TCP
-      targetPort: 8888
+      targetPort: 443

@@ -17,7 +17,6 @@ spec:
     #    - name: dockerhub-auth
       containers:
       - name: gitlab
-#        image: /gitlab/gitlab-ee:nightly
-        image: wil42/playground:v1
+        image: /gitlab/gitlab-ee:nightly
         ports:
-          - containerPort: 8888
+          - containerPort: 443
