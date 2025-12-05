@@ -20,4 +20,4 @@ spec:
 #        image: /gitlab/gitlab-ee:nightly
         image: wil42/playground:v1
         ports:
-          - containerPort: 61743
+          - containerPort: 8888
